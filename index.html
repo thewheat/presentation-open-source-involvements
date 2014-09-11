@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>Open Source Involvements: Experience in working on the OpenMRS CPM open source project</title>
+
+        <meta name="description" content="Slide deck for BGM2 (12 September 2014)">
+        <meta name="author" content="Timothy Lim Sheng Hwee">
+
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <link rel="stylesheet" href="css/reveal.min.css">
+        <link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+        <!-- For syntax highlighting -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+
+        <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+        <script>
+            document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+        </script>
+
+        <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+
+        <style>
+            .reveal a:not(.image) {
+                color: #0000ff;
+            }
+            .reveal section img{
+                border: 0;
+            }
+
+
+
+        </style>
+    </head>
+
+    <body>
+
+        <div class="reveal">
+
+            <!-- Any section element inside of this container is displayed as a slide -->
+            <div class="slides">
+
+                <section>
+                    <h1>Open Source Involvements</h1>
+                    <h3>Experience in working on the OpenMRS CPM open source project</h3>
+                    <p>
+                        <!-- <img src="img/qrcode.slides.png" style="float:right"> -->
+                        <small>
+                                <a target="_blank" href="http://thewheatfield.org">Timothy Lim</a> 
+                                / <a target="_blank" href="http://twitter.com/thewheat">@thewheat</a>
+                                <br>
+                                Slides: <a target="_blank" href="http://thewheat.github.io/presentation-open-source-involvements">http://thewheat.github.io/presentation-open-source-involvements</a>
+                        </small>
+                    </p>
+                </section>
+                <section>
+                    <h2>Why Get Involved?</h2>
+                    <ul>
+                        <li class="fragment">Learning something new</li>
+                        <li class="fragment">No / Less deadlines and business factors to abide by</li>
+                        <li class="fragment">Mentoring</li>
+                        <li class="fragment">Networking</li>
+                        <li class="fragment">Fostering the community</li>
+                        <li class="fragment">Being invovled in something greater than yourself</li>
+                        <li class="fragment">Find what you want to learn / explore</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>OpenMRS CPM</h2>
+                    <ul>
+                        <li class="fragment">OpenMRS: Open Medical Record System (<a target="_blank" href="http://openmrs.org/">openmrs.org</a>)
+                            <ul class="fragment">
+                                <li><a target="_blank" href="http://openmrs.org/about/mission/">User-Centered, Open, Community-Driven</a></li>
+                                <li><a target="_blank" href="https://atlas.openmrs.org/">Used World wide</a>
+                                    <img src="img/openmrs-map.png">
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>OpenMRS CPM</h2>
+                    <ul>
+                        <li class="fragment">CPM: <a target="_blank" href="https://wiki.openmrs.org/display/projects/Concept+Proposal+Client+and+Server">Concept Proposal Module</a>
+                            <ul>
+                                <li>Allows 2 OpenMRS instances to interact and communicate</li>
+                                <li>Proposer formulates a new concept that could be useful for everybody and sends to the Dictionary Manger for review</li>
+                                <li>Dictionay Manager: Approves, Rejects / Creates concept</li>
+                            </ul>
+                        </li>
+                        <li class="fragment">Weekly hacknights hosted by <a target="_blank" href="http://www.thoughtworks.com/">Thoughtworks</a>
+                            <img src="img/thoughworks-logo.png" style='background-color: #ffffff'>
+                        </li>
+                        <li class="fragment">On-going for 2 years, stake holders overseas</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Starting is always the hardest (1/2)</h2>
+                    <ul>
+                        <li class="fragment">People management
+                            <ul>
+                                <li class="fragment">Managing expectations</li>
+                                <li class="fragment">Food helps!</li>
+                            </ul>
+                        </li>
+                        <li class="fragment">Setup / Introduction
+                            <ul>
+                                <li class="fragment">High barriers of entry => great killer of enthusiasm</li>
+                                <li class="fragment"><a target="_blank" href="https://www.vagrantup.com/">Vagrant<br><img src="img/vagrant-logo.png" style='background-color: #fff'></a>    <ul class="fragment">
+                                        <li>Reproducable developer environments</li>
+                                        <li>Based on versionable files: e.g. <a target="_blank" href="https://github.com/OpenMRS-Australia/openmrs-vagrant/blob/master/Vagrantfile">Vagrantfile</a></li>
+                                        <li>One environment to rule them all</li>
+                                        <li class="fragment">(Let's see some code!)</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Starting is always the hardest (2/2)</h2>
+                    <ul>
+                        <li class="fragment">Documentation
+                            <ul>
+                                <li class="fragment">Non-technical overview</li>
+                                <li class="fragment">Technical overview (e.g. <a target="_blank" href="img/openmrs-cpm-tech-stack.png">tech stack</a>)</li>
+                                <li class="fragment"><a target="_blank" href="https://github.com/OpenMRS-Australia/openmrs-cpm/blob/master/README.md">Readme.md</a> / Readme.txt: Instructions in code repository</li>
+                                <li class="fragment">Wiki: <a target="_blank" href="https://www.atlassian.com/software/confluence">Confluence</a> (<a target="_blank" href="https://wiki.openmrs.org/display/projects/Melbourne+Hack+Night+-+Concept+Proposal+Module">CPM Wiki page</a>)
+                                    <ul>
+                                        <li class="fragment">Alternatives: <a target="_blank" href="https://www.mediawiki.org">MediaWiki</a>, <a target="_blank" href="http://redmine.org">Redmine</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="fragment">Communication
+                            <ul>
+                                <li class="fragment"><a target="_blank" href="http://groups.google.com/">Google Groups</a> (<a target="_blank" href="http://groups.google.com/d/forum/openmrs-australia">CPM Google group</a>)</li>
+                                <li class="fragment">Alternatives: <a target="_blank" href="http://slack.com">Slack</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>How we work (1/2)</h2>
+                    <ul>
+                        <li class="fragment" >Schedule: 
+                            <ul>
+                                <li>1800: Arrivals & Food</li>
+                                <li>1830: Stand Up</li>
+                                <li>2100: Go home!</li>
+                            </ul>
+                        </li>
+                        <li class="fragment">Agile
+                            <ul>
+                                <li class="fragment"><a target="_blank" href="http://trello.com/" target="_blank">Trello for Project Management</a>
+                                    (<a target="_blank" href="https://trello.com/b/9OlGMLQm/openmrs-melb" target="_blank">CPM Trello Board</a>)
+                                    <ul class="fragment">
+                                        <li>Business Analysts convert requirements to specs</li>
+                                        <li>Developers implement specs</li>
+                                        <li>People working on a card, adds themselves</li>
+                                        <li>Add appropriate comments to card</li>
+                                        <li>Alternatives: <a target="_blank" href="https://basecamp.com">Basecamp</a>, <a target="_blank" href="http://redmine.org">Redmine</a></li>
+                                    </ul>
+                                </li>
+                                <li class="fragment" >Pair Programming</li>
+                                <li class="fragment" >TTD: Unit / Integration / Functional Tests</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>How we work (2/2)</h2>
+                    <ul>
+                        <li class="fragment" >Code Repository
+                            <ul class="fragment">
+                                <li><a target="_blank" href="https://github.com/OpenMRS-Australia">GitHub</a>
+                                    <ul>
+                                        <li><a target="_blank" href="http://github.com/OpenMRS-Australia/openmrs-cpm">CPM code</a></li>
+                                        <li><a target="_blank" href="https://github.com/OpenMRS-Australia/openmrs-vagrant">Vagrant code</a></li>
+                                        <li><a target="_blank" href="https://github.com/OpenMRS-Australia/configuration-master">Deployment Configurations</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="fragment">Automated Deployment
+                            <ul>
+                                <li class="fragment"><a target="_blank" href="http://www.thoughtworks.com/products/go-continuous-delivery">Go for continuous delivery</a> (<a target="_blank" href="http://ec2-50-112-42-202.us-west-2.compute.amazonaws.com:8153/go/pipelines">CPM Go instance</a>)</li>
+                                <li class="fragment"><a target="_blank" href="https://travis-ci.org/">Travis CI</a> (especially great for pull requests) (<a target="_blank" href="https://travis-ci.org/OpenMRS-Australia/openmrs-cpm/">CPM on Travis CI</a>)</li>
+                                <li class="fragment"><a target="_blank" href="http://ec2-54-245-143-28.us-west-2.compute.amazonaws.com:8080/openmrs">Hosted on AWS</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Development</h2>
+                    <ul>
+                        <li class="fragment">GitHub all the things</li>
+                        <li class="fragment">Typical Git workflow
+                            <ol>
+                                <li>Fork (on GitHub)</li>
+                                <li>Clone</li>
+                                <li>Branch</li>
+                                <li>(Code / Fix / Review) + Test</li>
+                                <li>Pull Request (on GitHub)</li>
+                                <li>Review (Back to 4. if necessary)</li>
+                                <li>Merge</li>
+                            </ol>
+                        </li>    
+                        <li class="fragment">Pull request
+                            <ul class="fragment">
+                                <li>Not a finished code, but a start of the conversation</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Problems</h2>
+                    <ul>
+                        <li class="fragment">People leaving after 1 meetup
+                            <ul class="fragment">
+                                <li>Monthly Newbie Night vs introduction every week</li>
+                            </ul>
+                        </li>
+                        <li class="fragment">Spending too much time on setup
+                            <ul>
+                                <li class="fragment">Vagrant</li>
+                            </ul>
+                        </li>
+                        <li class="fragment">Lack of documentation
+                            <ul>
+                                <li class="fragment">Where do I start if I want to learn about x?</li>
+                                <li class="fragment">Where in the code do I find x to implement y?</li>
+                                <li class="fragment">Not knowing the prerequistes before implementing a fix/feature</li>
+                            </ul>
+                        </li>
+                        <li class="fragment">Disruptive behaviour</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>How to get the most out of it</h2>
+                    <ul>
+                        <li class="fragment">Stick with it for 1 or 2 months (4-8 meetups)
+                            <ul class="fragment">
+                                <li>Get to know the environment/culture</li>
+                                <li>See where you can contribute</li>
+                            </ul>
+                        </li>
+                        <li class="fragment">No task too small
+                            <ul class="fragment">
+                                <li>As long as it's beneficial to others, it's a good step forward</li>
+                            </ul>
+                        </li>
+                        <li class="fragment">Single Task: no matter the progress (or lack there of)
+                            <ul>
+                                <li class="fragment">Document issues with Setup for Newbies</li>
+                                <li class="fragment">Deployment with Go</li>
+                                <li class="fragment">Functional Tests</li>
+                            </ul>
+                        </li>
+                        <li class="fragment">Documentation 
+                            <ul>
+                                <li class="fragment">helps me research something more before writing actual documentation</li>
+                                <li class="fragment">helps identify what exactly needs to be done</li>
+                            </ul>
+                        </li>
+                        <li class="fragment">After hours</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>In conclusion</h2>
+                    <ul>
+                        <li class="fragment">For me<span class="fragment">: I've learned alot and makes me want to help on-boarding of people to projects</span></li>
+                        <li class="fragment">For you<span class="fragment">: Go Explore, Learn and Contribute back to the community at large!</span></li>
+                        <li class="fragment">OpenHatch is a non-profit dedicated to matching prospective free software contributors with communities, tools, and education.
+                            <a target="_blank" href="https://openhatch.org/">openhatch.org</a></li>
+                        <li class="fragment">CodeTriage: receive a different open issue in your inbox every day.
+                            <a target="_blank" href="http://www.codetriage.com/">codetriage.com</a></li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h1>THE END</h1>
+
+                        <small>
+                                <a target="_blank" href="http://thewheatfield.org">Timothy Lim</a> 
+                                / <a target="_blank" href="http://twitter.com/thewheat">@thewheat</a>
+                                <br>
+                                <a target="_blank" href="http://thewheat.github.io/presentation-open-source-involvements">http://thewheat.github.io/presentation-open-source-involvements</a>
+                        </small>
+<br><br>
+                    <small>Presentation done by <a target="_blank" href="http://lab.hakim.se/reveal-js/">reveal.js</a> by <a target="_blank" href="http://hakim.se">Hakim El Hattab</a></small>
+                </section>
+
+            </div>
+
+        </div>
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.min.js"></script>
+
+        <script>
+
+            // Full list of configuration options available here:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                center: true,
+
+                //theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+                theme:'simple',
+                transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+                // Optional libraries used to extend on reveal.js
+                dependencies: [
+                    { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+                    { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+                    // { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+                    // { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+                ]
+            });
+
+        </script>
+
+    </body>
+</html>
